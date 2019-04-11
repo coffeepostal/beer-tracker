@@ -13,10 +13,10 @@ app.use(bodyParser.json())
 //  Cors has something to do with browsers/domains and locations (tutorial was vague)
 app.use(cors())
 
-//  Simple GET request to "status" end point
-app.get('/status', (req, res) => {
+//  Using a POST request, we're sending credential info from the client to the server @ /register
+app.post('/register', (req, res) => {
     res.send({
-        message: 'Hello World!'
+        message: `User has been registered with the email address of: ${req.body.email}. 🚀`
     })
 })
 
