@@ -1,5 +1,5 @@
 //  Importing our api file
-import api from '@/services/api'
+import api from '@/services/Api'
 
 export default {
     //  Setting up a register method, sending the credentials to the base URL / register
